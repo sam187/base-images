@@ -12,8 +12,8 @@ pipeline {
   }
   stages {
     stage('dependencies') {
-      sh 'sudo apt-get update &
-          sudo apt-get install xmlstarlet'
+      sh 'sudo apt-get update '
+      sh 'sudo apt-get install xmlstarlet'
     }    
     stage('Build') {
       steps {
